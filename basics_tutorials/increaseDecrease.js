@@ -1,6 +1,7 @@
 // increase and deacrese an initial value 
 
 let bonusPoints = 50
+console.log(bonusPoints)
 
 // increase to 100
 bonusPoints = bonusPoints * 2
