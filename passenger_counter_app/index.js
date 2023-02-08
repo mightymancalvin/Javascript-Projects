@@ -3,6 +3,7 @@ let catCount = 0
 
 // grab object to change
 let countEl = document.getElementById('count-el')
+let saveEl = document.getElementById('save-el')
 
 function increment(){
     // update count 
@@ -24,5 +25,6 @@ function reset() {
 
 //save function 
 function save (){
+    saveEl.innerText += " " + catCount + " - "
     console.log(catCount)
 }
