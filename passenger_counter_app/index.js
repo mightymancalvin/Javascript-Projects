@@ -1,12 +1,30 @@
 // initialize count as 0
+let catCount = 0
 
-// listen for click to increase 
+// grab object to change
+let countEl = document.getElementById('count-el')
+let saveEl = document.getElementById('save-el')
 
-// increase the count variable 
-
-// change text in html to reflect new update 
 function increment(){
-    console.log("The button was clicked !!!")
+    // update count 
+    catCount += 1
+    // alert("The button was clicked !!! : ")
+
+    // change text to update
+    countEl.innerText = catCount
 }
 
-increment()
+function reset() {
+    // reset to Zero
+    catCount = 0
+
+    // change to zero
+    countEl.innerText = catCount
+
+}
+
+//save function 
+function save (){
+    saveEl.innerText += " " + catCount + " - "
+    console.log(catCount)
+}
