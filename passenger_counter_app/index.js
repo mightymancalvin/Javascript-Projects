@@ -21,3 +21,8 @@ function reset() {
     countEl.innerText = catCount
 
 }
+
+//save function 
+function save (){
+    console.log(catCount)
+}
