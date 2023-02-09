@@ -11,7 +11,9 @@ img {
 p {
     font-weight: 600;
     margin-bottom: 5px;
+    color: brown;
 }
+
 button {
     background: white;
     color: black;
