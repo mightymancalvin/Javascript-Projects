@@ -26,5 +26,10 @@ function reset() {
 //save function 
 function save (){
     saveEl.innerText += " " + catCount + " - "
+
+    // can also use textContent
+    // saveEl.textContent += catCount + " - "
+
     console.log(catCount)
+    reset()
 }
