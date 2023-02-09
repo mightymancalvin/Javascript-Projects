@@ -1,11 +1,5 @@
-// let errorLine = document.getElementById('error-el')
+let error_line = document.getElementById("error-el")
 
-// function error_msg() {
-//     errorLine.innerText("Something went wrong, please try again")
-// }
-
-
-// error_msg()
-
-alpha = document.getElementById('error-el')
-console.log(alpha)
+function show_me(){
+    error_line.textContent = "Something Went Wrong, Please try again Later"
+}
