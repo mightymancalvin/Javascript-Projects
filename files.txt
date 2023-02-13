@@ -1,0 +1,7 @@
+basics_tutorials/
+black-jack/
+files.txt
+passenger_counter_app/
+practice/
+README.md
+strings-project/
