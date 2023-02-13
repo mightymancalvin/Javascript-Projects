@@ -2,11 +2,12 @@
 // log a suitable message to the console in both cases 
 
 let age = Math.floor(Math.random() * 100)
+console.log(age)
 
 if (age < 21) {
-    console.log("You can enter the club !!!")
-} else {
     console.log("You cannot enter the club !!!")
+} else {
+    console.log("You can enter the club !!!")
 }
 
 
@@ -18,3 +19,4 @@ if (age < 100) {
 } else {
     console.log("You're not eligible, you already have a card !!!")
 }
+
