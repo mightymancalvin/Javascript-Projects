@@ -8,3 +8,13 @@ if (age < 21) {
 } else {
     console.log("You cannot enter the club !!!")
 }
+
+
+// Another if else try 
+if (age < 100) {
+    console.log("You are not eligible !!!")
+} else if (age === 100) {
+    console.log("Here is your birthday card !!!")
+} else {
+    console.log("You're not eligible, you already have a card !!!")
+}
