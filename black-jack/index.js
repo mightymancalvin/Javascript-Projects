@@ -21,23 +21,27 @@ console.log(sum)
 let hasBlackJack = false
 let isAlive = true
 
+// create a message variable 
+let msg = ""
+
 
 // check for winner 
 if (sum <= 20) {
     // ask to draw new card 
-    console.log("Do you want to draw another card ? : ")
+    msg = "Do you want to draw another card ? : "
 } else if (sum === 21) {
     // declare winner 
-    console.log("You've won. yaaaaaaaaaaaaaaaaaa !!!")
+    msg = "You've won. yaaaaaaaaaaaaaaaaaa !!!"
     hasBlackJack = true
 } else {
     // declare as looser 
-    console.log("Sorry, you've lost .... Try again !!!")
+    msg = "Sorry, you've lost .... Try again !!!"
     isAlive = false
 }
 
 // check and confirm
 console.log(isAlive)
+console.log(msg)
 
 if (hasBlackJack) {
     console.log("You can cash out now.")
