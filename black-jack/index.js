@@ -17,6 +17,10 @@ console.log(firstCard, SecondCard)
 let sum = firstCard + SecondCard
 console.log(sum)
 
+// state of game is alive
+let hasBlackJack = false
+let isAlive = true
+
 
 // check for winner 
 if (sum <= 20) {
@@ -25,7 +29,18 @@ if (sum <= 20) {
 } else if (sum === 21) {
     // declare winner 
     console.log("You've won. yaaaaaaaaaaaaaaaaaa !!!")
+    hasBlackJack = true
 } else {
     // declare as looser 
     console.log("Sorry, you've lost .... Try again !!!")
+    isAlive = false
+}
+
+// check and confirm
+console.log(isAlive)
+
+if (hasBlackJack) {
+    console.log("You can cash out now.")
+} else if (!isAlive) {
+    console.log("Sorry you lost!!!")
 }
