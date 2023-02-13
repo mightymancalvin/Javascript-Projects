@@ -1,21 +1,29 @@
 // create two cariables, firstCard and SecondCard
 // set their values to a random number between 2-11
+// grab start game button 
+let cards = document.getElementById("cards-el")
+let sumCards = document.getElementById("sum-el")
 
-function generate_val() {
-    val = Math.floor(Math.random() * 10) + 2
-    return val
+function startGame() {
+    cards.textContent = "Cards : "
+    sumCards.textContent = "Sum : "
+
+
+    function generate_val() {
+        val = Math.floor(Math.random() * 10) + 2
+        return val
+    }
+    function sum_cards(first, Second) {
+        result = firstCard + SecondCard
+        sumCards.textContent += result
+    }
+
+    let firstCard = generate_val(), SecondCard = generate_val()
+    cards.textContent += firstCard + ", " + SecondCard
+
+    sum_cards(firstCard, SecondCard)
 }
 
-
-let firstCard = generate_val(), SecondCard = generate_val()
-
-
-console.log(firstCard, SecondCard)
-
-
-// create a variable, sum and set it to the sum of the two cards 
-let sum = firstCard + SecondCard
-console.log(sum)
 
 // state of game is alive
 let hasBlackJack = false
@@ -23,6 +31,7 @@ let isAlive = true
 
 // create a message variable 
 let msg = ""
+
 
 
 // check for winner 
@@ -39,6 +48,7 @@ if (sum <= 20) {
     isAlive = false
 }
 
+
 // check and confirm
 console.log(isAlive)
 console.log(msg)
@@ -48,3 +58,4 @@ if (hasBlackJack) {
 } else if (!isAlive) {
     console.log("Sorry you lost!!!")
 }
+
