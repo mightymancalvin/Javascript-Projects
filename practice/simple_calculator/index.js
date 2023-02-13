@@ -24,12 +24,10 @@ function subtract() {
 
 function divide() {
     let total = num1 / num2
-    answer.textContent = "Division equals : " + total
-    
+    answer.textContent = "Division equals : " + total 
 }
 
 function multiply() {
     let total = num1 * num2
-    answer.textContent = "Mutiplication equals : " + total
-    
+    answer.textContent = "Mutiplication equals : " + total   
 }
