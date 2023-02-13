@@ -19,7 +19,7 @@ console.log(sum)
 
 
 // check for winner 
-if (sum < 21) {
+if (sum <= 20) {
     // ask to draw new card 
     console.log("Do you want to draw another card ? : ")
 } else if (sum === 21) {
