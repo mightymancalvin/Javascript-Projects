@@ -33,7 +33,6 @@ let isAlive = true
 let msg = ""
 
 
-
 // check for winner 
 if (sum <= 20) {
     // ask to draw new card 
