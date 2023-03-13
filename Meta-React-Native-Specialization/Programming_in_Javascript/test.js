@@ -1,5 +1,9 @@
-try {
-    Number(5).toPrecision(300)
-    } catch(e) {
-    console.log("There was an error")
-    }
+var globalVar = 77;
+
+function scopeTest() {
+    var localVar = 88;
+}
+
+console.log(localVar);
+
+
